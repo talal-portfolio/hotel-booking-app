@@ -1,0 +1,211 @@
+<ion-header>
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <button ion-button menuToggle style="padding-bottom: 10px" >
+           <ion-icon style="font-size: 30px !important; color: white;" name="menu"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col col-3 no-padding>
+          <p style="font-size: 23px !important;  margin-top:10%; margin-right:0%; color: white;">Booking</p>
+        </ion-col>
+        <ion-col col-2 no-padding>
+          <p style="font-size: 20px !important; margin-top:20%; margin-left: 0%; color: rgb(8, 128, 240);">.com</p>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col col-1>
+         <ion-icon style="font-size: 30px !important; color: white" name="notifications"></ion-icon>
+        </ion-col>
+        <ion-col col-1></ion-col>        
+        <ion-col col-1>
+         <ion-icon style="font-size: 30px !important; color: white" name="more"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+ <ion-grid>
+   <ion-row>
+     <ion-col col-12>
+       <h3>Hi, Talal</h3>
+     </ion-col>
+     <ion-col col-12>
+       <p  style="font-size: 18px !important;">Search Destination/Property Name</p>
+     </ion-col>
+   </ion-row>
+  <ion-card>
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button clear (click)="search()">
+          <ion-icon name="search" style="font-size: 30px !important; color: black" (click)="search()"></ion-icon>
+          <ion-input no-padding placeholder="Enter your destination" (click)="search()"> </ion-input>
+        </button>
+      </ion-col>
+    <!-- </ion-row>
+    <ion-row> -->
+      <ion-col col-12>
+       <p  style="font-size: 18px !important;"> Book Your Travel Days</p>
+      </ion-col>
+      <ion-col col-12>
+       <ion-datetime placeholder="From Date" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-col>
+      <ion-col col-12>
+       <ion-datetime placeholder="To Date" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-col>
+    </ion-row>    
+    </ion-card>
+    <ion-card>
+     <ion-row>
+      <ion-col col-3>
+       <ion-label  style="font-size: 17px !important;"> Rooms</ion-label>
+      </ion-col>
+      <ion-col col-3>
+        <ion-select style="border : 0.5px solid black; border-radius :20px; min-width:100%" interface="alert"> Rooms Required
+          <ion-option selected="true">
+          1
+          </ion-option>
+          <ion-option>
+          2
+        </ion-option>
+          <ion-option>
+          3
+        </ion-option>
+          <ion-option>
+          4
+        </ion-option>
+        <ion-option>
+          5
+        </ion-option>
+        <ion-option>
+          6
+        </ion-option>
+        <ion-option>
+          7
+        </ion-option>
+        <ion-option>
+          8
+        </ion-option>
+        <ion-option>
+          9
+        </ion-option>
+        </ion-select>
+      </ion-col>
+      <ion-col col-3>
+      <ion-label  style="font-size: 17px !important;">Adults</ion-label>
+      </ion-col>
+      <ion-col col-3>
+        <ion-select style="border : 0.5px solid black; border-radius :20px; min-width:100%" interface="alert"> Rooms Required
+          <ion-option selected="true">
+           1
+          </ion-option>
+          <ion-option>
+           2
+          </ion-option>
+          <ion-option>
+            3
+          </ion-option>
+          <ion-option>
+            4
+          </ion-option>
+          <ion-option>
+            5
+          </ion-option>
+          <ion-option>
+            6
+          </ion-option>
+          <ion-option>
+            7
+          </ion-option>
+          <ion-option>
+            8
+          </ion-option>
+          <ion-option>
+            9
+          </ion-option>
+        </ion-select>
+     </ion-col>
+      <ion-col col-5>
+      <ion-label style="font-size: 17px !important;">Childs 
+        <p style="font-size: 13px !important;" no-padding>(under 11 Age)</p> </ion-label>
+      </ion-col>
+      <ion-col col-3>
+        <ion-select style="border : 0.5px solid black; border-radius :20px; min-width:100%; margin-top: 10%;" interface="alert"> 
+          Rooms Required
+          <ion-option selected="true">
+            1
+          </ion-option>
+          <ion-option>
+            2
+          </ion-option>
+          <ion-option>
+            3
+          </ion-option>
+          <ion-option>
+            4
+          </ion-option>
+          <ion-option>
+            5
+          </ion-option>
+          <ion-option>
+            6
+          </ion-option>
+          <ion-option>
+            7
+          </ion-option>
+          <ion-option>
+            8
+          </ion-option>
+          <ion-option>
+           9
+          </ion-option>
+        </ion-select>      
+      </ion-col>
+    </ion-row>
+  </ion-card>
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button full style="text-transform: none;" >Search</button>
+      </ion-col>
+      <ion-col col-11>
+       <ion-label>I'm traveling for work</ion-label>
+      </ion-col>
+      <ion-col col-1>
+       <ion-checkbox style="padding-top: 15px;" ></ion-checkbox>
+      </ion-col>      
+    </ion-row>
+    <ion-card>
+      <ion-card-header>
+        <p style="font-size: 17px !important; color: darkgoldenrod; ">Soak up some sun</p>
+        <p style="font-size: 15px !important; color: darkred;"> Get Your dose of vitamin D in these sunny <br> destinations</p>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-slides slidesPerView="1">
+          <ion-slide *ngFor=" let c of images " >
+              <img ion-img [src]="c.image"/>
+              <br>
+            <h1>{{c.name}} </h1>
+          </ion-slide>
+        </ion-slides>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+          <p style="font-size: 17px !important; color: crimson;">Popular Destinations</p>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-slides slidesPerView="1.5" centeredSlides="true" autoplay="2000" loop="true" >
+            <ion-slide *ngFor="let c of images">
+                <h3 style="color: orange; padding-top: 5% "> Starts From {{c.deals}} $ Now </h3>
+                <img ion-img [src]="c.image"/>
+                <h2>{{c.city}}</h2>
+              <h1> {{c.con}} </h1>
+            </ion-slide>
+          </ion-slides>
+        </ion-card-content>
+      </ion-card>
+
+ </ion-grid>  
+</ion-content>

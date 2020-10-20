@@ -1,0 +1,39 @@
+page-deal {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+        }
+        .sld{ 
+          background-color: rgba(0,0,0,0.6) !important;
+          position: absolute;
+          // top: 0%;
+          bottom:0px;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px; 
+          color: #fff;
+          margin:0px;
+        }
+      
+        .bg{
+          background-color: rgba(0,0,0,0.3) !important;
+          position: absolute;
+          padding-top: 50%;
+          bottom:80px;
+          width: 100%;
+          padding-top: 20px;
+        }
+        .card-title {
+          font-size: 2.0em;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.3em;
+          color: #ccc;
+        }
+      
+      }
+

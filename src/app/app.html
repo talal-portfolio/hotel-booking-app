@@ -1,0 +1,37 @@
+<ion-menu style="width: 250px;"  [content]=con  >
+ <ion-content padding>  
+    <ion-list no-lines>
+          <ion-item menuClose (click)="profile()">
+            <ion-icon style="border-bottom: 2px solid; padding-top: 25%; padding-left: 10%;  padding-bottom: 25%; font-size: 60px !important;" name="person">
+            <h1>Talal Jamil</h1></ion-icon> 
+          </ion-item>      
+         <ion-item menuClose (click)="booking()">
+         <ion-icon style="font-size: 35px !important; padding-top: 5%" name="briefcase">
+         </ion-icon> &nbsp; Booking 
+         </ion-item>
+         <ion-item menuClose (click)="deals()">
+         <ion-icon style="font-size: 38px !important; padding-top: 5%" name="globe">
+         </ion-icon> &nbsp; Deals
+         </ion-item>
+         <ion-item menuClose style="border-bottom: 2px solid;">
+         <ion-icon style="font-size: 35px !important;padding-top: 5%" name="home">
+         </ion-icon> &nbsp; Travel Articles                     
+         </ion-item>
+         <ion-item menuClose (click)="settings()" style="margin-top: 10%;">
+           Settings
+         </ion-item>
+         <ion-item  menuClose >
+           Share
+         </ion-item>
+         <ion-item  menuClose >
+           Customer Service Help
+         </ion-item>
+         <ion-item menuClose >
+           Give App Feedback
+         </ion-item>
+        </ion-list>
+ </ion-content>
+ <ion-footer>
+ </ion-footer>
+</ion-menu>
+<ion-nav #con [root]="rootPage"></ion-nav>

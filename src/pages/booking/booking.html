@@ -1,0 +1,42 @@
+<!--
+  Generated template for the BookingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title >Bookings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment style="transparent" [(ngModel)]="booking" >
+    <ion-segment-button value="PAST">
+      PAST
+    </ion-segment-button>
+    <ion-segment-button value="CURRENT">
+      CURRENT
+    </ion-segment-button>
+    <ion-segment-button value="UPCOMING">
+      UPCOMING
+    </ion-segment-button>
+  </ion-segment>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3></ion-col>
+      <ion-col style="margin-top:30%" col-6>
+       <ion-icon style="font-size: 150px !important; color: grey;" name="briefcase"></ion-icon>
+      </ion-col>
+      <ion-col col-3></ion-col>
+     </ion-row>
+     <ion-row>
+       <p style="font-size: 18px !important; color: grey;">
+         To see your reservstion, you might <br> need to import your booking using <br>
+          your booking reference number <br> and PIN, or sign in to your My <br> Booking.com account.
+       </p>
+     </ion-row>
+  </ion-grid>
+
+
+</ion-content>

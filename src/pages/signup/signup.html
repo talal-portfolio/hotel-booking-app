@@ -1,0 +1,200 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Your details</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<ion-card>
+  <ion-card-header>
+    <h4> <strong> Public details </strong> </h4>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row style="border-bottom: 0.5px solid;">
+        <ion-col col-2>
+          <ion-icon style="font-size: 60px !important;" name="person"></ion-icon>
+        </ion-col>
+        <ion-col col-10>
+          <ion-item>
+          <ion-label floating color="dark">Display name</ion-label>
+          <ion-input type="text"></ion-input></ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      <ion-item style="border-bottom: 0.5px solid;">
+        <ion-label floating>Date of birth</ion-label>
+       <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+       <p style="color: grey;"> We'll show an age range next to your guest reviews.</p>    
+      <ion-item>       
+        <ion-label stacked>Location</ion-label><br>
+        <ion-select interface="popover" style="border-bottom: 0.5px solid; min-width:100% !important;">
+          <ion-option >Australia</ion-option>
+          <ion-option >Austria</ion-option>
+          <ion-option >Belarus</ion-option>
+          <ion-option >Belgium</ion-option>
+          <ion-option >Bulagaria</ion-option>
+          <ion-option >Canada</ion-option>
+          <ion-option >Crotia</ion-option>
+          <ion-option >Czech</ion-option>
+          <ion-option >Denmark</ion-option>
+          <ion-option >Finland</ion-option>
+          <ion-option >France</ion-option>
+          <ion-option >Germany</ion-option>
+          <ion-option >Greece</ion-option>
+          <ion-option >Greenland</ion-option>
+          <ion-option >Hungary</ion-option>
+          <ion-option >Iceland</ion-option>
+          <ion-option >India</ion-option>
+          <ion-option >Ireland</ion-option>
+          <ion-option >Italy</ion-option>
+          <ion-option >Kazakhstan</ion-option>
+          <ion-option >Netherlands</ion-option>
+          <ion-option >New Zeeland</ion-option>
+          <ion-option >Norway</ion-option>
+          <ion-option selected="true">Pakistan</ion-option>
+          <ion-option >Poland</ion-option>
+          <ion-option >Portugal</ion-option>
+          <ion-option >Russia</ion-option>
+          <ion-option >Saudi Arabia</ion-option>
+          <ion-option >Spain</ion-option>
+          <ion-option >Sweden</ion-option>
+          <ion-option >Switzerland</ion-option>
+          <ion-option >Ukrain</ion-option>
+          <ion-option >United Kingdom</ion-option>
+          <ion-option >United States</ion-option>
+        </ion-select>
+      </ion-item>
+  </ion-card-content>
+</ion-card>
+ <ion-card>   
+      <br>
+      <h4> <strong> Personal details </strong> </h4>
+    <ion-item>
+      <ion-label floating>Title</ion-label>
+      <ion-select interface="popover" style="border-bottom: 0.5px solid;">
+        <ion-option>Mr.</ion-option>
+        <ion-option>Ms.</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="dark">First Name</ion-label>
+      <ion-input type="text" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="dark">Last Name</ion-label>
+      <ion-input type="text" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="dark">Mobile Phone </ion-label>
+      <ion-input type="number" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-label floating><p>Gender</p></ion-label>
+      <ion-select interface="popover" style="border-bottom: 0.5px solid;">
+        <ion-option>Male.</ion-option>
+        <ion-option>Female</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="dark">Address</ion-label>
+      <ion-input type="text" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-label floating color="dark">City</ion-label>
+      <ion-input type="text" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item>
+    <ion-item>       
+      <ion-label stacked>Country/Region</ion-label>
+      <ion-select interface="popover" style="border-bottom: 0.5px solid; min-width:100% !important;">
+        <ion-option >Australia</ion-option>
+        <ion-option >Austria</ion-option>
+        <ion-option >Belarus</ion-option>
+        <ion-option >Belgium</ion-option>
+        <ion-option >Bulagaria</ion-option>
+        <ion-option >Canada</ion-option>
+        <ion-option >Crotia</ion-option>
+        <ion-option >Czech</ion-option>
+        <ion-option >Denmark</ion-option>
+        <ion-option >Finland</ion-option>
+        <ion-option >France</ion-option>
+        <ion-option >Germany</ion-option>
+        <ion-option >Greece</ion-option>
+        <ion-option >Greenland</ion-option>
+        <ion-option >Hungary</ion-option>
+        <ion-option >Iceland</ion-option>
+        <ion-option >India</ion-option>
+        <ion-option >Ireland</ion-option>
+        <ion-option >Italy</ion-option>
+        <ion-option >Kazakhstan</ion-option>
+        <ion-option >Netherlands</ion-option>
+        <ion-option >New Zeeland</ion-option>
+        <ion-option >Norway</ion-option>
+        <ion-option selected="true">Pakistan</ion-option>
+        <ion-option >Poland</ion-option>
+        <ion-option >Portugal</ion-option>
+        <ion-option >Russia</ion-option>
+        <ion-option >Saudi Arabia</ion-option>
+        <ion-option >Spain</ion-option>
+        <ion-option >Sweden</ion-option>
+        <ion-option >Switzerland</ion-option>
+        <ion-option >Ukrain</ion-option>
+        <ion-option >United Kingdom</ion-option>
+        <ion-option >United States</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="dark">Zip code</ion-label>
+      <ion-input type="text" style="border-bottom: 0.5px solid;"></ion-input>
+    </ion-item> 
+      <ion-grid>
+        <ion-row>
+          <ion-col col-11>      
+            <ion-label fixed>Smoking preferred?</ion-label>
+          </ion-col>
+          <ion-col col-1>      
+            <ion-checkbox></ion-checkbox>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-11>      
+            <ion-label fixed>Business traveler?</ion-label>
+          </ion-col>
+          <ion-col col-1>      
+            <ion-checkbox></ion-checkbox>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+ </ion-card>
+ <ion-card>
+   <ion-card-header>
+     <h4> <strong> Email Addresses </strong> </h4>
+   </ion-card-header>
+   <ion-card-content>
+     <p>Add your Email Address to make it easier to book.</p>
+   </ion-card-content>
+   <button ion-button clear>Edit Your Email</button>
+ </ion-card>
+ <ion-card>
+    <ion-card-header>
+      <h4> <strong> Credit card details </strong> </h4>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Add your credit or debit card to make it easier to book.</p>
+    </ion-card-content>
+    <button ion-button clear>Add New Credit Card</button>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-4> <button ion-button clear color="danger" style="text-transform: none;" (click)="login()">Sign out</button> </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
